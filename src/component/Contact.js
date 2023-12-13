@@ -1,9 +1,19 @@
 import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
 
 export default function Contact() {
   return (
     <div>
-        <h1>Contact Page</h1>
+      <Header />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-12'>
+            Contact Page
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   )
 }

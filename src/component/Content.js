@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Content() {
     return (
@@ -21,25 +22,25 @@ export default function Content() {
                     </div>
                     <div className='row mt-3'>
                         <div className='col-md-3 me-5'>
-                            <a href='/resume'>
+                            <Link to='/resume'>
                                 <div id="resume">
                                     <strong>Resume</strong>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className='col-md-3 me-5'>
-                            <a href='/project'>
+                            <Link to='/project'>
                                 <div id="project">
                                     <strong>Project</strong>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className='col-md-3'>
-                            <a href='/contact'>
+                            <Link to='/contact'>
                                 <div id="contact">
                                     <strong>Contact</strong>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
