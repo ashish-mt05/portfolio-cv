@@ -6,55 +6,36 @@ export default function Education() {
         {
             'educationYear': '2015-2017',
             'degree': 'M-Tech',
-            'stream': 'Information Technology',
-            'percentile ': '7.54',
-            'percentage': null
+            'stream': 'IT',
+            'percentage': '7.54',
+            'location': 'IIITM Gwalior MP'
         },
         {
             'educationYear': '2010-2014',
             'degree': 'B-Tech',
-            'stream': 'Information Technology',
-            'percentile ': null,
+            'stream': 'IT',
             'percentage': '72.54',
+            'location': 'Knit SUltanpur UP'
         }
     ]
     return (
-            <div>
-                {/* Using map to iterate over the array and render list items */}
-                {educationData.map((item, index) => (
-                    <>
-                        <div className='row mb-1'>
-                            <div className='col-md-6'>Year</div>
-                            <div className='col-md-6'>{item.educationYear}</div>
-                        </div>
-                        <div className='row mb-1'>
-                            <div className='col-md-6'>Degree Name</div>
-                            <div className='col-md-6'>{item.degree}</div>
-                        </div>
-                        <div className='row mb-1'>
-                            <div className='col-md-6'>Stream</div>
-                            <div className='col-md-6'>{item.stream}</div>
-                        </div>
-                        <div className='row mb-1'>
-                            <div className='col-md-6'>Percentile</div>
-                            {
-                            item.percentile == null ?
-                                <div className='col-md-6'>NA</div>
-                                : <div className='col-md-6'>{item.percentile}</div>
-                            }
-                        </div>
-                        <div className='row mb-3'>
-                            <div className='col-md-6'>Percantage</div>
-                            {
-                            item.percentage == null ?
-                                <div className='col-md-6'>NA</div>
-                                : <div className='col-md-6'>{item.percentage}</div>
-    
-                            }
-                        </div>
-                        
-                    </>
-                ))}
+        <div>
+            <div className='row mb-1'>
+                <div className='col-md-2'><strong>Year</strong></div>
+                <div className='col-md-2'><strong>Degree Name</strong></div>
+                <div className='col-md-2'><strong>Stream</strong></div>
+                <div className='col-md-2'><strong>Percantage</strong></div>
+                <div className='col-md-4'><strong>Location</strong></div>
             </div>
+            {educationData.map((item, index) => (
+                <div className='row mb-1'>
+                    <div className='col-md-2'>{item.educationYear}</div>
+                    <div className='col-md-2'>{item.degree}</div>
+                    <div className='col-md-2'>{item.stream}</div>
+                    <div className='col-md-2'>{item.percentage}</div>
+                    <div className='col-md-4'>{item.location}</div>
+                </div>
+            ))}
+        </div>
     )
 }

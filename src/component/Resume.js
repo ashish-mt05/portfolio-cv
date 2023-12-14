@@ -17,20 +17,20 @@ export default function Resume() {
           </div>
         </div>
         <div className='row pt-3' id="skillset">
-          <div className='col-md-6'><strong>Skills Set</strong></div>
-          <div className='col-md-6'>
+          <div className='col-md-3'><strong>Skills Set</strong></div>
+          <div className='col-md-9'>
             <SkillSet />
           </div>
         </div>
         <div className='row pt-3' id="education">
-          <div className='col-md-6'><strong>Education</strong></div>
-          <div className='col-md-6'>
+          <div className='col-md-3'><strong>Education</strong></div>
+          <div className='col-md-9'>
             <Education />
           </div>
         </div>
         <div className='row pt-3' id="workexperience">
-          <div className='col-md-6'><strong>Work Experience</strong></div>
-          <div className='col-md-6'>
+          <div className='col-md-3'><strong>Work Experience</strong></div>
+          <div className='col-md-9'>
             <WorkExperience />
           </div>
         </div>
