@@ -31,7 +31,7 @@ export default function Project() {
             {projectInfo.map((item, index) => (
               <>
                 <div className='row mb-1'>
-                  <div className='col-md-6'>Start-End Year</div>
+                  <div className='col-md-6'><strong>Start-End Year</strong></div>
                   <div className='col-md-6'>{item.projectYear}</div>
                 </div>
                 <div className='row mb-1'>
@@ -56,6 +56,7 @@ export default function Project() {
                   <div className='col-md-6'>Project Description</div>
                   <div className='col-md-6'>{item.projectDescription}</div>
                 </div>
+                {item != null ? <hr className='w-75'/> : <></>}
                 </>
             ))}
         </div>

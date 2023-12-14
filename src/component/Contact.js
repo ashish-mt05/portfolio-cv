@@ -52,10 +52,10 @@ export default function Contact() {
           <div className='col-md-6'>
             <form onSubmit={handleFormData}>
               <div className="row mb-2">
-                <div className="col-md-4 me-3">
+                <div className="col-md-5 me-3">
                   <div>First Name</div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-5">
                   <div>Last Name</div>
                 </div>
               </div>
