@@ -17,7 +17,12 @@ export default function Content() {
                     <div className='row mt-3'>
                         <div className='col-md-12'>
                             <h4>A Bit About Me</h4>
-                            <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                            <p>
+                                I have total 5yrs of experience to develop java web and standalon application using Java, 
+                                Java8, Spring, Spring boot, Microservices, Jenkins, Docker, Kubertens, Istio, MySql, MongoDB, Kafka, 
+                                J2EE, JSP, Servlet, Reactjs, JavaScript, Html, CSS, Bootstrap, Camunda, Aws state Machine,
+                                Sonarqube, fortify, new relic, sentry, ELK, splunk, kibana, Maven.
+                            </p>
                         </div>
                     </div>
                     <div className='row mt-3'>
