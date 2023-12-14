@@ -23,46 +23,42 @@ export default function Project() {
     <div>
       <Header />
       <div className='container'>
-        <div className='row' >
-          <div className='col-md-12 mb-4'>
+        <div className='row mb-5' >
+          <div className='col-md-3'>
             <strong>Projects</strong>
           </div>
-        </div>
-        <div className='row'>
-          <div className='col-md-12'>
-            <div>
-              {projectInfo.map((item, index) => (
-                <>
-                  <div className='row mb-1'>
-                    <div className='col-md-6'>Year</div>
-                    <div className='col-md-6'>{item.projectYear}</div>
+          <div className='col-md-9'>
+            {projectInfo.map((item, index) => (
+              <>
+                <div className='row mb-1'>
+                  <div className='col-md-6'>Start-End Year</div>
+                  <div className='col-md-6'>{item.projectYear}</div>
+                </div>
+                <div className='row mb-1'>
+                  <div className='col-md-6'>Project Name</div>
+                  <div className='col-md-6'>{item.projectName}</div>
+                </div>
+                <div className='row mb-1'>
+                  <div className='col-md-6'>Technology Used</div>
+                  <div className='col-md-6'>
+                    {item.technologyUsed.map((technology, index) => (
+                      <span key={index}>
+                        <span className="me-2">{technology}</span>
+                      </span>
+                    ))}
                   </div>
-                  <div className='row mb-1'>
-                    <div className='col-md-6'>Project Name</div>
-                    <div className='col-md-6'>{item.projectName}</div>
-                  </div>
-                  <div className='row mb-1'>
-                    <div className='col-md-6'>Technology Used</div>
-                    <div className='col-md-6'>
-                      {item.technologyUsed.map((technology, index) => (
-                        <span key={index}>
-                          <span className="me-2">{technology}</span>
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <div className='row mb-1'>
-                    <div className='col-md-6'>Rolls & Responsibility</div>
-                    <div className='col-md-6'>{item.rollResponsibility}</div>
-                  </div>
-                  <div className='row mb-3'>
-                    <div className='col-md-6'>Project Description</div>
-                    <div className='col-md-6'>{item.projectDescription}</div>
-                  </div>
+                </div>
+                <div className='row mb-1'>
+                  <div className='col-md-6'>Rolls & Responsibility</div>
+                  <div className='col-md-6'>{item.rollResponsibility}</div>
+                </div>
+                <div className='row mb-3'>
+                  <div className='col-md-6'>Project Description</div>
+                  <div className='col-md-6'>{item.projectDescription}</div>
+                </div>
                 </>
-              ))}
-            </div>
-          </div>
+            ))}
+        </div>
         </div>
       </div>
       <Footer />

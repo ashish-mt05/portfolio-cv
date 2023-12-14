@@ -108,3 +108,26 @@
   padding-top: 35px;
   padding-bottom: 80px;
 }
+
+#message{
+  width: 278px;
+  height: 137px;
+}
+
+.forminput{
+  width: 238px;
+    height: 40px;
+}
+.formbutton{
+  border: 1px solid black;
+  width: 141px;
+  height: 140px;
+  border-radius: 6em;
+  background-color: #EEA302;
+  margin-left: 42px;
+  transition: var(--trans2,color .4s ease 0s);
+}
+
+.formbutton:hover{
+  background-color: #F3F3F3;
+}

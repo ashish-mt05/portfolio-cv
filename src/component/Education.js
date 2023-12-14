@@ -24,11 +24,11 @@ export default function Education() {
                 <div className='col-md-2'><strong>Year</strong></div>
                 <div className='col-md-2'><strong>Degree Name</strong></div>
                 <div className='col-md-2'><strong>Stream</strong></div>
-                <div className='col-md-2'><strong>Percantage</strong></div>
+                <div className='col-md-2'><strong>Percantage/Grad</strong></div>
                 <div className='col-md-4'><strong>Location</strong></div>
             </div>
             {educationData.map((item, index) => (
-                <div className='row mb-1'>
+                <div className='row mb-1' key={index}>
                     <div className='col-md-2'>{item.educationYear}</div>
                     <div className='col-md-2'>{item.degree}</div>
                     <div className='col-md-2'>{item.stream}</div>
