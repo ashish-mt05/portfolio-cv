@@ -52,11 +52,10 @@ export default function Project() {
                   <div className='col-md-6'>Rolls & Responsibility</div>
                   <div className='col-md-6'>{item.rollResponsibility}</div>
                 </div>
-                <div className='row mb-3'>
+                <div className='row mb-5'>
                   <div className='col-md-6'>Project Description</div>
                   <div className='col-md-6'>{item.projectDescription}</div>
                 </div>
-                {item != null ? <hr className='w-75'/> : <></>}
                 </>
             ))}
         </div>
